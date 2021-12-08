@@ -1,0 +1,6 @@
+names <- c("Dhoni","Virat","Rohit","Samson","Rahul")
+played <- c(100,75,50,10,25)
+won <- c(90,45,20,5,12)
+lost <- c(5,20,25,3,11)
+captain_record <- data.frame(names,played,won,lost)
+View(captain_record)
