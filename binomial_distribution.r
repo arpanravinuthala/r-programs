@@ -1,0 +1,15 @@
+x<-c(0,1,2,3,4,5,6,7)
+f<-c(7,6,19,35,30,23,7,1)
+fx<-f*x
+sumfx<-sum(fx)
+sumf<-sum(f)
+s<-length(x)-1
+p<-sumfx/sumf/s
+pr<-dbinom(0:7,s,p)
+fe<-sumf*pr
+c<-chi.test(f,fe)
+print(c)
+bsr<-dataframe(x,f,fx,pr,fe)
+sums<-sum(NA,f,fx,NA,NA)
+mydata<-rbind(bsr,sums)
+print(mydata)
