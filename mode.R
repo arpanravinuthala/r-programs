@@ -1,4 +1,5 @@
-v<-c(1,3,4,2,3,1,1,3,2,4,2,4)
+print("enter the elements")
+v<-scan()
 len <- length(v)
 g <- c()
 l<-c()
