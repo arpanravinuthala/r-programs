@@ -1,0 +1,6 @@
+print("enter the x values")
+x<-scan()
+print("enter the y values")
+y<-scan()
+t<-ks.test(x,y,paired=TRUE)
+print(t)
